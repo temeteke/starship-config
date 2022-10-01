@@ -8,3 +8,6 @@ truncate_to_repo = false
 disabled = false
 time_format = "%F %T"
 style = "none"
+
+[git_status]
+modified = "*"
