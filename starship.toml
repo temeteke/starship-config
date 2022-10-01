@@ -7,4 +7,4 @@ truncate_to_repo = false
 [time]
 disabled = false
 time_format = "%F %T"
-style = "yellow"
+style = "none"
