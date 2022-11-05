@@ -1,17 +1,23 @@
-format = "$all$time$line_break$jobs$battery$status$container$shell$character"
+format = "$all$time$cmd_duration$line_break$jobs$battery$status$container$shell$character"
+
+[username]
+show_always = true
+
+[hostname]
+ssh_only = false
+style = "bold green"
 
 [directory]
 truncation_length = 100
 truncate_to_repo = false
 
-[time]
-disabled = false
-time_format = "%F %T"
-style = "none"
-
 [git_status]
 modified = "*"
 
-[hostname]
-ssh_only = false
-style = "green"
+[time]
+disabled = false
+time_format = "%F %T"
+style = "yellow"
+
+[cmd_duration]
+style = "yellow"
