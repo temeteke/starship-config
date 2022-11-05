@@ -1,4 +1,4 @@
-format = "$all$time$cmd_duration$line_break$jobs$battery$status$container$shell$character"
+format = "$all$time$cmd_duration$memory_usage$line_break$jobs$battery$status$container$shell$character"
 
 [username]
 show_always = true
@@ -21,3 +21,6 @@ style = "yellow"
 
 [cmd_duration]
 style = "yellow"
+
+[memory_usage]
+disabled = false
