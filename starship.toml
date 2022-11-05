@@ -11,3 +11,7 @@ style = "none"
 
 [git_status]
 modified = "*"
+
+[hostname]
+ssh_only = false
+style = "green"
