@@ -1,4 +1,5 @@
-DESTDIR := ~/.config
+BIN_DIR := ~/.local/bin
+CONFIG_DIR := ~/.config
 FILES := starship.toml
 
 .PHONY: all clean install uninstall
@@ -7,8 +8,10 @@ all:
 claen:
 
 install: $(FILES)
-	mkdir -p $(DESTDIR)
-	cp $(FILES) $(DESTDIR)/
+	curl -sS https://starship.rs/install.sh | sh -s -- -f --bin-dir $(BIN_DIR)
+	mkdir -p $(CONFIG_DIR)
+	cp $(FILES) $(CONFIG_DIR)/
 
 uninstall:
-	rm $(addprefix $(DESTDIR)/, $(FILES))
+	rm -f $(BIN_DIR)/starship
+	rm -f $(addprefix $(CONFIG_DIR)/, $(FILES))
