@@ -10,7 +10,7 @@ claen:
 install: $(FILES)
 	curl -sS https://starship.rs/install.sh | sh -s -- -f --bin-dir $(BIN_DIR)
 	mkdir -p $(CONFIG_DIR)
-	cp $(FILES) $(CONFIG_DIR)/
+	cp -a $(FILES) $(CONFIG_DIR)/
 
 uninstall:
 	rm -f $(BIN_DIR)/starship
