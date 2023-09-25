@@ -8,6 +8,7 @@ all:
 claen:
 
 install: $(FILES)
+	mkdir -p $(BIN_DIR)
 	curl -sS https://starship.rs/install.sh | sh -s -- -f --bin-dir $(BIN_DIR)
 	mkdir -p $(CONFIG_DIR)
 	cp -a $(FILES) $(CONFIG_DIR)/
