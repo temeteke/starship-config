@@ -5,7 +5,7 @@ FILES := starship.toml
 .PHONY: all clean install uninstall
 all:
 
-claen:
+clean:
 
 install: $(FILES)
 	mkdir -p $(BIN_DIR)
